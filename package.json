@@ -1,12 +1,20 @@
 {
   "name": "ProgressBarDownload",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1 align=\"center\">Welcome to ProgressBarDownload 👋</h1> <p>   <img alt=\"Version\" src=\"https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000\" />   <a href=\"#\" target=\"_blank\">     <img alt=\"License: MIT\" src=\"https://img.shields.io/badge/License-MIT-yellow.svg\" />   </a> </p>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Matheus Gois <matheusgoislimasilva@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaatheusGois/ProgressBarDownloadTemplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaatheusGois/ProgressBarDownloadTemplate/issues"
+  },
+  "homepage": "https://github.com/MaatheusGois/ProgressBarDownloadTemplate#readme"
 }
