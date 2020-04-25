@@ -15,37 +15,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ey1-Pa-90z">
-                                <rect key="frame" x="87" y="136" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ey1-Pa-90z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tDe-7b-16y">
-                                <rect key="frame" x="132" y="306" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <progressView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tDe-7b-16y">
+                                <rect key="frame" x="20" y="769" width="374" height="2"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="tintColor" red="0.89019607840000003" green="0.52156862749999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXt-AJ-GbS">
-                                <rect key="frame" x="184" y="360" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-FU-oh7">
-                                <rect key="frame" x="184" y="477" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCf-LE-bcx">
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCf-LE-bcx">
                                 <rect key="frame" x="132" y="447" width="150" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BPX-L2-myg">
+                                <rect key="frame" x="159.5" y="789" width="95" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXt-AJ-GbS" userLabel="download">
+                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="tintColor" red="0.89019607840000003" green="0.52156862749999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" image="square.and.arrow.down" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="28" scale="large" weight="light"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hv4-bd-31U" userLabel="download">
+                                        <rect key="frame" x="57.5" y="0.0" width="37.5" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="tintColor" red="0.89019607840000003" green="0.52156862749999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" image="square.and.arrow.up" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="28" scale="large" weight="light"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ey1-Pa-90z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4c7-gA-lua"/>
+                            <constraint firstItem="tDe-7b-16y" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.7" id="8zR-Ut-2Ob"/>
+                            <constraint firstItem="ey1-Pa-90z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BHU-R2-VBW"/>
+                            <constraint firstItem="tDe-7b-16y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="UYT-sC-TrA"/>
+                            <constraint firstItem="ey1-Pa-90z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ajt-bH-OHb"/>
+                            <constraint firstItem="BPX-L2-myg" firstAttribute="top" secondItem="tDe-7b-16y" secondAttribute="top" constant="20" id="iXK-JL-uWz"/>
+                            <constraint firstItem="BPX-L2-myg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mKV-le-L0V"/>
+                            <constraint firstItem="tDe-7b-16y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="njF-gq-YSB"/>
+                            <constraint firstAttribute="bottom" secondItem="ey1-Pa-90z" secondAttribute="bottom" id="s1e-5G-FcL"/>
+                            <constraint firstItem="tDe-7b-16y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.00223214" id="vvM-ho-aYt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="ey1-Pa-90z" id="H6D-b7-9TL"/>
                         <outlet property="loadImageButton" destination="LXt-AJ-GbS" id="jNF-6N-8GP"/>
                         <outlet property="loadProgressIndicator" destination="tDe-7b-16y" id="sJH-rq-tZx"/>
-                        <outlet property="uploadImageButton" destination="dqi-FU-oh7" id="7hE-ym-mHk"/>
+                        <outlet property="uploadImageButton" destination="Hv4-bd-31U" id="Tgu-It-U9f"/>
                         <outlet property="uploadProgressIndicator" destination="ZCf-LE-bcx" id="CdL-Is-rHm"/>
                     </connections>
                 </viewController>
@@ -54,4 +78,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+    </resources>
 </document>

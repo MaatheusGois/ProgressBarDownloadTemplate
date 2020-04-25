@@ -106,4 +106,7 @@ extension ViewController {
         uploadProgressIndicator.progress = 0
         downloadTask?.resume()
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
+    }
 }
