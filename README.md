@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to ProgressBarDownload 👋</h1>
 <p >
-  <img alt="Preview" src="./preview" />
+  <img alt="Preview" src="./preview.gif" />
 </p>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
